@@ -8,4 +8,6 @@ var B = parseInt(lines.shift());
 
 console.log("X = " + (A + B));
 
+//"parseInt(lines.shift())" é uma expressão JavaScript que remove e converte o primeiro elemento de um array (presumivelmente uma string representando um número) em um número inteiro.
+
 //Finished
