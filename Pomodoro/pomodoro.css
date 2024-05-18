@@ -1,0 +1,75 @@
+:root {
+    --pomodoro: #af3f3f;
+    --short: #3fa4af;
+    --long: #73af3f;
+}
+
+html {
+    text-align: center;
+    background-color: var(--pomodoro);
+    color: white;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    flex-direction: column;
+    transition: background-color 0.5s ease;
+
+}
+
+#timer {
+    font-size: 140px;
+    font-weight: bold;
+    user-select: none;
+}
+
+.mode {
+    border:none;
+    background-color: transparent;
+    cursor: pointer;
+    border-bottom: 1px rgb(220, 220, 220);
+    color: rgb(218, 218, 218);
+    padding: 15px;
+    font-size: 17px;
+    transition-duration: 0.2;
+}
+
+.mode.active {
+    color: white;
+    border-bottom: 2px solid white;
+
+}
+
+.mode.active.hover {
+    color: white;
+    border-bottom: 2px solid white;
+    
+}
+
+.mode.hover {
+    color: white;
+    border-bottom: 2px solid white;
+    
+}
+
+.timer-control {
+    border: none;
+    background-color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    color: black;
+    mix-blend-mode: lighten;
+    padding: 10px 20px;
+    font-size: 20px;
+    transition-duration: 0.2s;
+}
+
+.timer-control:disabled {
+    background-color: rgb(227, 226, 226, 0.62);
+}
+
+.timer-control:hover {
+    background-color: rgb(228, 228, 228);
+}

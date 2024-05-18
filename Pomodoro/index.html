@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pomodoro</title>
+    <link rel="stylesheet" href="pomodoro.css">
+</head>
+<body>
+    <div id="modes">
+        <button data-mode-id="pomodoro" class="mode active">Pomodoro</button>
+        <button data-mode-id="short" class="mode">Short Break</button>
+        <button data-mode-id="long" class="mode">Long Break</button>
+    </div>
+    <div id="timer">25:00</div>
+    <div id="controls">
+        <button onclick="startTimer()" class="timer-control start">Start</button>
+        <button onclick="pauseTimer()" class="timer-control pause">Pause</button>
+        <button onclick="nextMode()" class="timer-control skip">Skip</button>
+    </div>
+
+</body>
+
+<script src="pomodoro.js"></script>
+</html>
