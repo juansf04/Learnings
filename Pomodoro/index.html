@@ -19,7 +19,11 @@
         <button onclick="pauseTimer()" class="timer-control pause">Pause</button>
         <button onclick="nextMode()" class="timer-control skip">Skip</button>
     </div>
-
+    <div id="duration-control">
+        Work Time: <input time="number" placeholder="Work Duration" class="duration" data-duration-id="pomodoro"> <br>
+        Short Break: <input time="number" placeholder="Short Break" class="duration" data-duration-id="short"> <br>
+        Long Break: <input time="number" placeholder="Long Break" class="duration" data-duration-id="long"> <br>
+    </div>
 </body>
 
 <script src="pomodoro.js"></script>

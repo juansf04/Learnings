@@ -73,3 +73,24 @@ html {
 .timer-control:hover {
     background-color: rgb(228, 228, 228);
 }
+
+#duration-control {
+    margin-top: 20px;
+    user-select: none;
+
+}
+
+#duration-control .duration {
+    margin-top: 5px;
+
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
