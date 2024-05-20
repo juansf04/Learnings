@@ -16,7 +16,6 @@ html {
     align-items: center;
     flex-direction: column;
     transition: background-color 0.5s ease;
-
 }
 
 #timer {
@@ -26,32 +25,24 @@ html {
 }
 
 .mode {
-    border:none;
+    border: none;
     background-color: transparent;
     cursor: pointer;
-    border-bottom: 1px rgb(220, 220, 220);
+    border-bottom: 1px solid rgb(220, 220, 220);
     color: rgb(218, 218, 218);
     padding: 15px;
     font-size: 17px;
-    transition-duration: 0.2;
+    transition: color 0.2s, border-bottom 0.2s;
 }
 
 .mode.active {
     color: white;
     border-bottom: 2px solid white;
-
 }
 
-.mode.active.hover {
+.mode:hover {
     color: white;
     border-bottom: 2px solid white;
-    
-}
-
-.mode.hover {
-    color: white;
-    border-bottom: 2px solid white;
-    
 }
 
 .timer-control {
@@ -63,30 +54,29 @@ html {
     mix-blend-mode: lighten;
     padding: 10px 20px;
     font-size: 20px;
-    transition-duration: 0.2s;
+    transition: background-color 0.2s;
 }
 
 .timer-control:disabled {
-    background-color: rgb(227, 226, 226, 0.62);
+    background-color: rgba(227, 226, 226, 0.62);
+    cursor: not-allowed;
 }
 
-.timer-control:hover {
+.timer-control:hover:not(:disabled) {
     background-color: rgb(228, 228, 228);
 }
 
 #duration-control {
     margin-top: 20px;
     user-select: none;
-
 }
 
 #duration-control .duration {
     margin-top: 5px;
-
 }
 
 input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button{
+input::-webkit-inner-spin-button {
     -webkit-appearance: none;
     margin: 0;
 }
